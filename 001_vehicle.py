@@ -1,3 +1,4 @@
+# encapsulation (using setter & getter function )
 class Vehicle:  # blueprint
     def __init__(
         self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity
