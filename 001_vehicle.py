@@ -19,7 +19,7 @@ class Vehicle:  # blueprint
 
 if __name__ == "__main__":
     tesla_model_s = Vehicle(4, "electric", 5, 205)
-    print(tesla_model_s.number_of_wheels)
-    tesla_model_s.set_number_wheels()  # setting new varable
-    print(tesla_model_s.get_number_wheels())
+    print(tesla_model_s.number_of_wheels)  # the original num
+    tesla_model_s.set_number_wheels()  # setting new num
+    print(tesla_model_s.get_number_wheels())  # getting new num
     tesla_model_s.make_noise("Brrrrraaa Brrrrrra shoosh")
