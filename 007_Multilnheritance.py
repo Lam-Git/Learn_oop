@@ -8,7 +8,7 @@ class Rectangle:
         return self.length * self.width
 
     def circumstance(self):
-        return (self.length * self.width) * 2
+        return (self.length + self.width) * 2
 
 
 class Square(Rectangle):
@@ -42,9 +42,9 @@ class Triangle:
         return 0.5 * self.base * self.height
 
 
-class Pyramid(Square, Triangle):  # multiple super class, here kwargs is used.
+class Pyramid(Square, Triangle):  # multiple super class, here **kwargs is used
     def __init__(self, base, slant_height, **kwargs):
-        self.base = super().area()
+        self.base = base
         self.slant_height = slant_height
         kwargs["height"] = slant_height
         kwargs["length"] = base
