@@ -1,5 +1,6 @@
-class Rectangle:
-    def __init__(self, length, width, **kwargs):
+# https://realpython.com/python-super/
+class Rectangle:  # blueprint
+    def __init__(self, length, width, **kwargs):  # **kwargs arguments is unknown
         self.length = length
         self.width = width
         super().__init__(**kwargs)
@@ -61,6 +62,6 @@ class Pyramid(Square, Triangle):  # multiple super class, here **kwargs is used
         return triangle_area * 4 + base_area
 
 
-pyramid = Pyramid(5, 2)
+pyramid = Pyramid(5, 2)  # instance option
 print(pyramid.pyr_area1())
 print(pyramid.pyr_area2())
