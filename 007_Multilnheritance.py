@@ -61,6 +61,6 @@ class Pyramid(Square, Triangle):  # multiple super class, here **kwargs is used
         return triangle_area * 4 + base_area
 
 
-pyramid = Pyramid(3, 2)
+pyramid = Pyramid(5, 2)
 print(pyramid.pyr_area1())
 print(pyramid.pyr_area2())
