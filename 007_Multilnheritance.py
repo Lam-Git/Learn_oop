@@ -17,7 +17,7 @@ class Square(Rectangle):
         super().__init__(length=length, width=length, **kwargs)
 
 
-class Cube(Square):
+class Cube(Square):  # dose not take a super() since Cube inherit from square.
     def surface_area(self):
         face_area = super().area()
         return face_area * 6

@@ -4,7 +4,7 @@ class Rectangle:  # Blueprint
         self.length = length
         self.width = width
 
-    def area(self):  # instance method
+    def area(self):  # instance method always take a return
         return self.length * self.width
 
     def circumstance(self):

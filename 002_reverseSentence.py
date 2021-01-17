@@ -1,5 +1,7 @@
 class ReverseSentence:
-    def __init__(self, sentence="Hello World, everything will be just fine."):
+    def __init__(
+        self, sentence="Hello World, everything will be just fine."
+    ):  # (objects)
         self.sentence = sentence
 
     def reverse(self):
