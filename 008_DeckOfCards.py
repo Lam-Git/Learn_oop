@@ -1,6 +1,9 @@
 import random
 
 
+# https://github.com/eli-byers/Deck-Of-Cards-Python/blob/master/deckofcards.py
+
+
 class Card(object):  # blueprint (Card Class)
     def __init__(self, suit, val):  # instance attributes
         self.suit = suit
@@ -51,10 +54,10 @@ class Player(object):
 
 
 deck = Deck()  # instance object
-deck.shuffle()
-deck.show()
-deck.build()
-deck.show()
+# deck.shuffle()
+# deck.show()
+# deck.build() #we can call any of the instance
+# deck.show()
 
 lam = Player("Lam")  # instance object
 lam.draw(deck).draw(deck)
